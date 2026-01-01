@@ -6,7 +6,7 @@ import { GraduationCap, Quote, Calendar, Link as LinkIcon } from "lucide-react";
 const publications = [
     {
         title: "Image denoising in acoustic microscopy using block-matching and 4D filter",
-        journal: "Scientific Reports (Nature)",
+        journal: "Nature Scientific Reports",
         year: "2023",
         citations: "35",
         link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=B8VoEywAAAAJ&citation_for_view=B8VoEywAAAAJ:jgBuDB5drN8C"
@@ -31,6 +31,20 @@ const publications = [
         year: "2025",
         citations: "3",
         link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=B8VoEywAAAAJ&citation_for_view=B8VoEywAAAAJ:BzfGm06jWhQC"
+    },
+    {
+        title: "Extended Depth Acoustic Imaging with AutoSAFT and Block-Matching 4D Filtering",
+        journal: "Scandinavian Symposium on Physical Acoustics",
+        year: "2025",
+        citations: "0",
+        link: "https://scholar.google.com/citations?hl=en&user=B8VoEywAAAAJ"
+    },
+    {
+        title: "Ultrasonic signal denoising using hybrid filter for image reconstruction",
+        journal: "Symposium on Ultrasonic Electronics",
+        year: "2021",
+        citations: "0",
+        link: "https://scholar.google.com/citations?hl=en&user=B8VoEywAAAAJ"
     }
 ];
 

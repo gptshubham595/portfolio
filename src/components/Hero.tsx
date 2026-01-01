@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, Twitter, Youtube, ExternalLink } from "lucide-react";
+import { Github, Linkedin, Mail, Twitter, Youtube, ExternalLink, FileText } from "lucide-react";
 import Image from "next/image";
 
 export default function Hero() {
@@ -10,6 +10,7 @@ export default function Hero() {
         { icon: <Github className="w-5 h-5" />, href: "https://github.com/gptshubham595/", label: "GitHub" },
         { icon: <Youtube className="w-5 h-5" />, href: "https://www.youtube.com/c/pocexperts", label: "YouTube" },
         { icon: <Mail className="w-5 h-5" />, href: "mailto:gptshubham595@gmail.com", label: "Email" },
+        { icon: <FileText className="w-5 h-5" />, href: "https://bit.ly/resumeshubhamola", label: "Resume" },
     ];
 
     return (
@@ -40,34 +41,46 @@ export default function Hero() {
                 </motion.h1>
 
                 <motion.p
-                    className="text-xl md:text-2xl text-gray-400 font-light mb-8 max-w-2xl mx-auto"
+                    className="text-xl md:text-2xl text-gray-400 font-light mb-8 max-w-3xl mx-auto"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.4, duration: 0.8 }}
                 >
-                    Senior Mobile Developer at <span className="text-white font-medium">Oracle</span> | Ex-<span className="text-white font-medium">Ola Electric</span> |
+                    Senior Mobile Developer at <span className="text-white font-medium">Oracle</span> | Ex-<span className="text-white font-medium">Ola Electric</span>
                     <br className="hidden md:block" />
-                    <span className="text-blue-400">Technical Leader</span> & <span className="text-purple-400">Research-Driven Problem Solver</span>
+                    <span className="text-blue-400">3.5+ Years of Expertise</span> in High-Performance Android,
+                    <span className="text-purple-400">Technical Leadership</span> & <span className="text-green-400">Security Research</span>
                 </motion.p>
 
                 <motion.div
-                    className="flex gap-4 justify-center items-center"
+                    className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.6, duration: 0.8 }}
                 >
-                    {socialLinks.map((link, idx) => (
-                        <a
-                            key={idx}
-                            href={link.href}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="p-3 glass rounded-full hover:scale-110 transition-transform hover:text-blue-400"
-                            aria-label={link.label}
-                        >
-                            {link.icon}
-                        </a>
-                    ))}
+                    <a
+                        href="https://bit.ly/resumeshubhamola"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-blue-400 hover:text-white transition-all transform hover:scale-105 flex items-center gap-2"
+                    >
+                        <FileText className="w-5 h-5" /> Resume
+                    </a>
+
+                    <div className="flex gap-4">
+                        {socialLinks.map((link, idx) => (
+                            <a
+                                key={idx}
+                                href={link.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="p-3 glass rounded-full hover:scale-110 transition-transform hover:text-blue-400"
+                                aria-label={link.label}
+                            >
+                                {link.icon}
+                            </a>
+                        ))}
+                    </div>
                 </motion.div>
             </motion.div>
 

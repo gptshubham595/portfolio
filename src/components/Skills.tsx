@@ -5,24 +5,24 @@ import { Laptop, Database, ShieldCheck, Cpu } from "lucide-react";
 
 const skillCategories = [
     {
-        title: "Android Core",
+        title: "Architecture & Leadership",
+        icon: <Cpu className="w-5 h-5 text-blue-400" />,
+        skills: ["Technical Leadership", "System Architecture", "Security Research", "CI/CD Orchestration", "Team Mentorship", "Stakeholder Management", "Agile Methodologies"]
+    },
+    {
+        title: "Android Engineering (Systems)",
         icon: <Laptop className="w-5 h-5 text-blue-400" />,
-        skills: ["Kotlin", "Java", "Jetpack Compose", "NDK", "Hilt", "Coroutines", "BLE", "ARCore"]
+        skills: ["Kotlin/Java", "NDK (Oboe)", "Jetpack Compose", "Coroutines/Flow", "BLE/AltBeacon", "ARCore", "WorkManager", "Custom SDK Dev"]
     },
     {
-        title: "Backend & Systems",
-        icon: <Cpu className="w-5 h-5 text-purple-400" />,
-        skills: ["NodeJs", "Spring Boot", "Docker", "Hadoop", "Flume", "Sqoop"]
-    },
-    {
-        title: "Databases",
-        icon: <Database className="w-5 h-5 text-green-400" />,
-        skills: ["MySQL", "MongoDB", "Redis", "PostgreSQL", "RethinkDB", "RoomDB"]
-    },
-    {
-        title: "Security & QA",
+        title: "Security & QA Strategy",
         icon: <ShieldCheck className="w-5 h-5 text-red-400" />,
-        skills: ["Bug Hunting", "Reverse Engineering", "CI/CD (Jenkins)", "KtLint", "Detekt"]
+        skills: ["Reverse Engineering", "Frida", "ProGuard/R8", "Reverse Proxy Analysis", "BrowserStack", "95% Code Coverage", "Detekt/KtLint"]
+    },
+    {
+        title: "Full-Stack & Research",
+        icon: <Database className="w-5 h-5 text-green-400" />,
+        skills: ["NodeJs", "PHP/Spring Boot", "Blockchain (Solidity)", "MATLAB/LabView", "Digital Signal Processing", "ELK Stack", "Docker/Jenkins"]
     }
 ];
 
@@ -36,7 +36,7 @@ export default function Skills() {
                     {skillCategories.map((cat, idx) => (
                         <motion.div
                             key={idx}
-                            className="glass p-8 hover:border-white/20 transition-all group"
+                            className="glass-card transition-all group"
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}

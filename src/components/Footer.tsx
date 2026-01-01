@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Linkedin, Github, Mail, Youtube, ArrowUp } from "lucide-react";
+import { Linkedin, Github, Mail, Youtube, ArrowUp, FileText } from "lucide-react";
 
 export default function Footer() {
     const scrollToTop = () => {
@@ -21,16 +21,19 @@ export default function Footer() {
 
                     <div className="flex flex-col items-center md:items-end gap-4">
                         <div className="flex gap-4">
-                            <a href="https://www.linkedin.com/in/shubhamguptaggps" target="_blank" rel="noopener noreferrer" className="p-2 glass hover:text-blue-400 transition-colors">
+                            <a href="https://bit.ly/resumeshubhamola" target="_blank" rel="noopener noreferrer" title="Resume" className="p-2 glass hover:text-blue-400 transition-colors">
+                                <FileText className="w-5 h-5" />
+                            </a>
+                            <a href="https://www.linkedin.com/in/shubhamguptaggps" target="_blank" rel="noopener noreferrer" title="LinkedIn" className="p-2 glass hover:text-blue-400 transition-colors">
                                 <Linkedin className="w-5 h-5" />
                             </a>
-                            <a href="https://github.com/gptshubham595/" target="_blank" rel="noopener noreferrer" className="p-2 glass hover:text-gray-400 transition-colors">
+                            <a href="https://github.com/gptshubham595/" target="_blank" rel="noopener noreferrer" title="GitHub" className="p-2 glass hover:text-gray-400 transition-colors">
                                 <Github className="w-5 h-5" />
                             </a>
-                            <a href="mailto:gptshubham595@gmail.com" className="p-2 glass hover:text-red-400 transition-colors">
+                            <a href="mailto:gptshubham595@gmail.com" title="Email" className="p-2 glass hover:text-red-400 transition-colors">
                                 <Mail className="w-5 h-5" />
                             </a>
-                            <a href="https://www.youtube.com/c/pocexperts" target="_blank" rel="noopener noreferrer" className="p-2 glass hover:text-red-600 transition-colors">
+                            <a href="https://www.youtube.com/c/pocexperts" target="_blank" rel="noopener noreferrer" title="YouTube" className="p-2 glass hover:text-red-600 transition-colors">
                                 <Youtube className="w-5 h-5" />
                             </a>
                         </div>

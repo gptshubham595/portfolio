@@ -24,7 +24,8 @@ export default function ParticlesBackground() {
                 interactivity: {
                     events: {
                         onClick: {
-                            enable: false,
+                            enable: true,
+                            mode: "push",
                         },
                         onHover: {
                             enable: true,
@@ -34,10 +35,13 @@ export default function ParticlesBackground() {
                     },
                     modes: {
                         grab: {
-                            distance: 140,
+                            distance: 200,
                             links: {
-                                opacity: 0.5,
+                                opacity: 0.8,
                             },
+                        },
+                        push: {
+                            quantity: 4,
                         },
                     },
                 },
@@ -49,8 +53,8 @@ export default function ParticlesBackground() {
                         color: "#3b82f6",
                         distance: 150,
                         enable: true,
-                        opacity: 0.2,
-                        width: 1,
+                        opacity: 0.4,
+                        width: 1.5,
                     },
                     move: {
                         direction: "none",
@@ -59,7 +63,7 @@ export default function ParticlesBackground() {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 1,
+                        speed: 1.2,
                         straight: false,
                     },
                     number: {
@@ -67,16 +71,16 @@ export default function ParticlesBackground() {
                             enable: true,
                             area: 800,
                         },
-                        value: 80,
+                        value: 100,
                     },
                     opacity: {
-                        value: 0.3,
+                        value: 0.5,
                     },
                     shape: {
                         type: "circle",
                     },
                     size: {
-                        value: { min: 1, max: 2 },
+                        value: { min: 1, max: 3 },
                     },
                 },
                 detectRetina: true,
