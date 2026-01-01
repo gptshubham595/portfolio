@@ -10,7 +10,6 @@ export default function Hero() {
         { icon: <Github className="w-5 h-5" />, href: "https://github.com/gptshubham595/", label: "GitHub" },
         { icon: <Youtube className="w-5 h-5" />, href: "https://www.youtube.com/c/pocexperts", label: "YouTube" },
         { icon: <Mail className="w-5 h-5" />, href: "mailto:gptshubham595@gmail.com", label: "Email" },
-        { icon: <FileText className="w-5 h-5" />, href: "https://bit.ly/resumeshubhamola", label: "Resume" },
     ];
 
     return (
