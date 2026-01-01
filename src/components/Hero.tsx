@@ -22,7 +22,7 @@ export default function Hero() {
             >
                 <div className="relative w-40 h-40 mx-auto mb-8 rounded-full overflow-hidden border-4 border-blue-500/20 animate-float">
                     <Image
-                        src="/photo.png"
+                        src="/photo.jpeg"
                         alt="Shubham Kumar Gupta"
                         fill
                         className="object-cover"
